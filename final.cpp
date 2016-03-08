@@ -69,7 +69,7 @@ bool parseBuffer(const std::string& buff, std::string& filePath)
 	//std::istream_iterator<std::string> end;
 
 	//std::set<std::string> strSet(it, end);
-    
+    return true;
 }
 
 bool readFile(const std::string& fullPath, std::string& content)
