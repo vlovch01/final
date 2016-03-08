@@ -304,7 +304,7 @@ int main(int argc, char** argv)
 					   {
                            if( rSize > 0 ) 
 						   {
-							   send( Events[i].data.fd, buffer, rSize, MSG_NOSIGNAL );
+							   //send( Events[i].data.fd, buffer, rSize, MSG_NOSIGNAL );
 							   Message m;
 							   m.buffer.assign(buffer);
 							   m.fd = Events[i].data.fd;
