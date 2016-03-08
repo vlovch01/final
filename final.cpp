@@ -116,7 +116,7 @@ void workerThread(std::string& directory)
 
 					ss << "HTTP/1.0 200 OK";
 					ss << "\r\n";
-					ss << "Content-length: ";
+					ss << "Content-Length: ";
 					ss << content.size();
 					ss << "\r\n";
 					ss << "Content-Type: text/html";
@@ -131,7 +131,7 @@ void workerThread(std::string& directory)
 					std::stringstream ss;
 					ss << "HTTP/1.0 404 NOT FOUND";
 					ss << "\r\n";
-					ss << "Content-length: ";
+					ss << "Content-Length: ";
 					ss << 0;
 					ss << "\r\n";
 					ss << "Content-Type: text/html";
